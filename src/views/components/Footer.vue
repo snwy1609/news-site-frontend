@@ -6,7 +6,7 @@
          <div class="col-lg-2 gt-sm"></div>
          <div class="col-lg-6 col-sm-12">
              <div class="row justify-start">
-               <div class="col-lg-4">
+               <div class="col-lg-4 col-sm-6">
                     <h4 class="title text-semibold" style="color:rgb(4, 105, 136);">ENEWS.Net</h4>
                     <i class="fab fa-facebook icon" ></i>
                     <i class="fab fa-twitter icon" ></i>

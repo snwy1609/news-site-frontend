@@ -7,7 +7,7 @@
        <div class="col-lg-8 col-md-8 col-sm-12 col-6  q-px-md">
          <div v-if="products && products.articles">     
              <div v-for="(item, index) in products.articles" :key="item.url" class="col-md-12" @click="redirect(item.url)">
-               <div v-if="index === 5" class="flex">
+               <div v-if="index === 6" class="flex">
                  <div class="col">
                    <header-card :item="item" />
                  </div>
