@@ -59,15 +59,15 @@
                 <q-toolbar class="second-tool  flex justify-center items-center " v-if="isDesktop">              
                     <q-tabs>
                         <q-route-tab label="Trending Now" name="trending" to="/trending"> </q-route-tab>
-                        <q-route-tab label="News" name="Home" to="/home"> </q-route-tab>
-                        <q-route-tab label="Global" name="about" to="/global"> </q-route-tab>
+                        <q-route-tab label="News" name="news" to="/home"> </q-route-tab>
+                        <q-route-tab label="Global" name="global" to="/global"> </q-route-tab>
                         <q-route-tab label="Technology" name="technology" to="/technology"> </q-route-tab>
                         <q-route-tab label="Business" name="business" to="/business"> </q-route-tab>
-                        <q-route-tab label="Politics" name="about" to="/about"> </q-route-tab>
-                        <q-route-tab label="Entertainment" name="about" to="/about"> </q-route-tab>
-                        <q-route-tab label="Sports" name="about" to="/about"> </q-route-tab>
-                        <q-route-tab label="Lifestyle" name="about" to="/about"> </q-route-tab>
-                        <q-route-tab label="Health" name="about" to="/about"> </q-route-tab>
+                        <q-route-tab label="Politics" name="politics" to="/politics"> </q-route-tab>
+                        <q-route-tab label="Entertainment" name="entertainment" to="/entertainment"> </q-route-tab>
+                        <q-route-tab label="Sports" name="sports" to="/sports"> </q-route-tab>
+                        <q-route-tab label="Stocks" name="lifestyle" to="/lifestyle"> </q-route-tab>
+                        <q-route-tab label="Health" name="health" to="/health"> </q-route-tab>
                         
                     </q-tabs>                  
                 </q-toolbar>
@@ -125,16 +125,16 @@
     return {
       isDesktop: true,
       tabs: [
-        { label: 'Trending Now', name: 'trending', to: '/trending' },
-        { label: 'News', name: 'Home', to: '/home' },
-        { label: 'Global', name: 'about', to: '/global' },
-        { label: 'Technology', name: 'technology', to: '/technology' },
-        { label: 'Business', name: 'business', to: '/business' },
-        { label: 'Politics', name: 'about', to: '/about' },
-        { label: 'Entertainment', name: 'about', to: '/about' },
-        { label: 'Sports', name: 'about', to: '/about' },
-        { label: 'Lifestyle', name: 'about', to: '/about' },
-        { label: 'Health', name: 'about', to: '/about' },
+        { label: "Trending Now", name: "trending", to: "/trending" },
+        { label: "News", name: "news", to: "/home" },
+        { label: "Global", name: "global", to: "/global" },
+        { label: "Technology", name: "technology", to: "/technology" },
+        { label: "Business", name: "business", to: "/business" },
+        { label: "Politics", name: "politics", to: "/politics" },
+        { label: "Entertainment", name: "entertainment", to: "/entertainment" },
+        { label: "Sports", name: "sports", to: "/sports" },
+        { label: "Stocks", name: "lifestyle", to: "/lifestyle" },
+        { label: "Health", name: "health", to: "/health" }
       ], // To track if the screen is desktop-sized
     };
     },

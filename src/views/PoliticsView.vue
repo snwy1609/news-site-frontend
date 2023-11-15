@@ -7,7 +7,7 @@
        <div class="col-lg-8 col-md-8 col-sm-12 col-6  q-px-md">
          <div v-if="products && products.articles">     
              <div v-for="(item, index) in products.articles" :key="item.url" class="col-md-12" @click="redirect(item.url)">
-               <div v-if="index === 18" class="flex">
+               <div v-if="index === 9" class="flex">
                  <div class="col">
                    <header-card :item="item" />
                  </div>
@@ -40,7 +40,7 @@
      <div class="row">
        <div class="col-8">
           <div class="row text-bold q-pa-sm q-mr-md text-h5" style="background-color:  rgb(218, 218, 218);color:rgb(4, 105, 136);">
-              Global
+              Politics
           </div>
           <div class="row">
              <div v-if="products && products.articles">
@@ -183,7 +183,7 @@
  
      onMounted(async () => {
       
-        products.value = await getData(`https://newsapi.org/v2/everything?q=war&from=2023-11-10&sortBy=publishedAt&apiKey=${localapiKey}`);
+        products.value = await getData(`https://newsapi.org/v2/everything?q=politics&language=en&from=2023-11-10&sortBy=popularity&apiKey=${localapiKey}`);
        //products.value = await getData('https://fakestoreapi.com/products')
        
      });

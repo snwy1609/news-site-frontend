@@ -166,7 +166,7 @@ import SideItemVue from '@/components/SideItem.vue'
 import ThirdRow from '@/components/ThirdRow.vue'
 
 import { onMounted, ref } from 'vue'
-import FourthRowVue from './components/FourthRow.vue'
+import FourthRowVue from '../components/FourthRow.vue'
 
 export default {
   components: {
@@ -183,7 +183,7 @@ export default {
 
     onMounted(async () => {
      
-       products.value = await getData(`https://newsapi.org/v2/top-headlines?category=business&language=en&country=us&apiKey=${localapiKey}`);
+       //products.value = await getData(`https://newsapi.org/v2/top-headlines?category=business&language=en&country=us&apiKey=${localapiKey}`);
       //products.value = await getData('https://fakestoreapi.com/products')
       
     });

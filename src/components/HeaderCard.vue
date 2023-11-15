@@ -1,7 +1,7 @@
 <template>
     <div class="news-card">
             <h5>{{ title }}</h5>
-             <img class="news-image" :src="item.urlToImage" alt="News Image">
+             <img class="news-image shadow-lg" :src="item.urlToImage" alt="News Image">
              <div class="news-details">
                <p class="news-title">{{ item.title }}</p>
                <p class="news-description">{{ item.description}}</p>
@@ -47,6 +47,7 @@ export default {
  width: 100%;
  height: 400px;
  object-fit: cover;
+
  
 }
 
